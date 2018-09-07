@@ -18,6 +18,8 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
 <p><b><font size="100px">How to use ?</font></b><br></p>
 <br>
         Basically, the only prerequisite required for execution is the Java Runtime Environment (JRE). <br>
+<br>
+<p><img src="images/instructionsimg.PNG" width="500" align="left"> For using the JAR, just follow these simple instructions. After the application is launched, it will ask for some basic user entry. Fill those out. <br> </p>
         
         
                

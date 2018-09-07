@@ -17,7 +17,9 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
 
 <p><b><font size="100px">How to use ?</font></b><br></p>
 <br>
-        Basically, the only prerequisite required for execution is the Java Runtime Environment (JRE). 
+        Basically, the only prerequisite required for execution is the Java Runtime Environment (JRE). <br>
+        
+        
                
           
 

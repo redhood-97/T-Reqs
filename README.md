@@ -23,7 +23,7 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
         <p>For using the JAR, just follow these simple instructions. After the application is launched, it will ask for some basic user entry. Fill those out. And VOILA !!! It's done. It's that easy. You Dockerfile is almost ready to go but it is recommended to make some changes, if needed before using it. <br> </p>
         <br>
         <br>
-        <p><b> NOTES: </b> This is just a beta version, which means, yes, it has some bugs that I'm still trying to figure out. At the moment, the application works for Python and Go projects but it'll be extended to other languages as well in the near future. Feel free to share your thoughts regarding any possible improvements so as to increase the overall scope of this project. All suggestions are more than welcome. </p>
+        <p><b> NOTE: </b> This is just a beta version, which means, yes, it has some bugs that I'm still trying to figure out. At the moment, the application works for Python and Go projects but it'll be extended to other languages as well in the near future. Feel free to share your thoughts regarding any possible improvements so as to increase the overall scope of this project. All suggestions are more than welcome. </p>
         
         
         

@@ -6,11 +6,13 @@
 <p>This tool can prove to be really time-saving when you are working on a Docker application. You just need to have the app source coude file and the basic project directory will be created containing the required files. It is suggested that a preview is made before finalizing anything. Since, this is a beta version, some entries inside the Dockerfile may be incomplete for much more complicated projects and may require a little bit of manual adjustments. Work is being done to make the whole process a lot more efficient. </p>
 <br>
 <br>
-<p><b><font size="100px"> The Directory Structure </font> </b></p>
+<p><b><font size="100px"> The Directory Structure </font> </b></p><br>
 
 <p><img src="images/dirstructimg.PNG" width="400" align="left"> As shown in the image, a new project folder will be created which will contain the mentioned files<br>
 
-The user will be asked to enter a main project directory name. This will contain the Dockerfile and the src folder. The src folder will keep a copy of the original source code file and the automatically generated requirements file. <br></p> 
+The user will be asked to enter a main project directory name. This will contain the Dockerfile and the src folder. The src folder will keep a copy of the original source code file and the automatically generated requirements file.<br></p>
+
+Also, it's to be noted that it acts a miniature <i> version control </i> system on it's own. If any changes are made to the original source code, then executing the tool will refresh everything in the project directory, deleting all the older versions.<br>
 
 
 

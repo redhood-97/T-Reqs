@@ -10,9 +10,16 @@
 
 <p><img src="images/dirstructimg.PNG" width="400" align="left"> As shown in the image, a new project folder will be created which will contain the mentioned files<br>
 
-The user will be asked to enter a main project directory name. This will contain the Dockerfile and the src folder. The src folder will keep a copy of the original source code file and the automatically generated requirements file.<br></p>
+The user will be asked to enter a main project directory name. This will contain the Dockerfile and the src folder. The src folder will keep a copy of the original source code file and the automatically generated requirements file.<br>
 
-Also, it's to be noted that it acts a miniature <i> version control </i> system on it's own. If any changes are made to the original source code, then executing the tool will refresh everything in the project directory, deleting all the older versions.<br>
+Also, it's to be noted that it acts a miniature <i> version control </i> system on it's own. If any changes are made to the original source code, then executing the tool will refresh everything in the project directory, deleting all the older versions.<br></p>
+<br>
+
+<p><b><font size="100px">About the Installation</font></b><br>
+<br>
+          1. <u>Prerequisites</u><br>
+          
+
 
 
 

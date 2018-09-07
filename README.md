@@ -19,7 +19,7 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
 <br>
         Basically, the only prerequisite required for execution is the Java Runtime Environment (JRE). <br>
 <br>
-<p><img src="images/instructionsimg.PNG" width="750" align="left"><p> <br><br>
+<p><img src="images/instructionsimg.PNG" width="900" align="left"><p> <br><br>
         <p>For using the JAR, just follow these simple instructions. After the application is launched, it will ask for some basic user entry. Fill those out. And VOILA !!! It's done. It's that easy. You Dockerfile is almost ready to go but it is recommended to make some changes, if needed before using it. <br> </p>
         <br>
         

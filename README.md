@@ -8,7 +8,7 @@
 
 <p><b> The Directory Structure </b></p>
 
-<p><img src="images/dirstructimg.png" width="200" align="left"> As shown in the image, a new project folder will be created which will contain the mentioned files </p> 
+<p><img src="images/dirstructimg.PNG" width="200" align="left"> As shown in the image, a new project folder will be created which will contain the mentioned files </p> 
 
 
 

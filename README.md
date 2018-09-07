@@ -15,9 +15,11 @@ The user will be asked to enter a main project directory name. This will contain
 Also, it's to be noted that it acts a miniature <i> version control </i> system on it's own. If any changes are made to the original source code, then executing the tool will refresh everything in the project directory, deleting all the older versions.<br></p>
 <br>
 
-<p><b><font size="100px">About the Installation</font></b><br>
+<p><b><font size="100px">About the Installation</font></b><br></p>
 <br>
-          1. <u>Prerequisites</u><br>
+        <p>  1. <u>Prerequisites</u><br>
+                      a. Java Runtime Environment
+                    </p>
           
 
 

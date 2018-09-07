@@ -1,0 +1,1 @@
+doskey treqsrun=java -jar *Complete path of the JAR file*

@@ -6,16 +6,16 @@ It saves a few steps when you work with Docking your project. For instance, it g
 
 <b> The Directory Structure </b>
 
- |
- |----> Project Folder
-         |
-         |----> Dockerfile
-         |
-         |----> src
-                |
-                |----> requirements.txt
-                |
-                |----> source_code_file
+ |<br>
+ |----> Project Folder<br>
+         |<br>
+         |----> Dockerfile<br>
+         |<br>
+         |----> src<br>
+                |<br>
+                |----> requirements.txt<br>
+                |<br>
+                |----> source_code_file<br>
          
 </p>
 

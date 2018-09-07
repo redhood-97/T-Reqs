@@ -10,11 +10,12 @@
 <br>
 <br>
 <br>
+<br>
+<br>
 
+<p><b><font size="20"> The Directory Structure </font> </b></p>
 
-<p><b> The Directory Structure </b></p>
-
-<p><img src="images/dirstructimg.PNG" width="200" align="left"> As shown in the image, a new project folder will be created which will contain the mentioned files </p> 
+<p><img src="images/dirstructimg.PNG" width="400" align="left"> As shown in the image, a new project folder will be created which will contain the mentioned files </p> 
 
 
 

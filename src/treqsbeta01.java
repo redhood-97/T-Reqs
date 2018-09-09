@@ -39,6 +39,8 @@ public class treqsbeta01
 
 		String file_name = scan.nextLine();
 
+		int no_of_source_files = 1;
+
 		String the_file_extension = new String();
 
 		the_file_extension = get_extension(file_name);
@@ -73,7 +75,7 @@ public class treqsbeta01
 		///////////   Getting the information about package installers   ////////////
 		////////////////////////////////////////////////////////////////////////////
 
-		String[] package_installer_info = package_recognizer(the_file_extension);
+		String[] package_installer_info = package_recognizer(the_file_extension, file_name);
 
 		/////////////////////////////////////////////////////////////////////////////
 		///////////     Getting the prepocessing keyword     ///////////////////////
@@ -150,20 +152,33 @@ public class treqsbeta01
 			e.printStackTrace();
 		}
 
+		//////////////////////////////////////////////////////////////////////////////////////////////
+		/////////////////    The name of the Docker image     ///////////////////////////////////////
+		////////////////////////////////////////////////////////////////////////////////////////////
+
+		System.out.println("Enter a name for the Docker image:");
+
+		String docker_image_name = scan.nextLine();
+
+
 		/////////////////////////////////////////////////////////////////////////////
 		////////         First we need to create an SRC directory          /////////
 		////////////////////////////////////////////////////////////////////////////
 
-		File src_dir = new File(master_folder_name + "/src");
+		System.out.println("Enter a name for the code folder :");
 
-		if(src_dir.exists())
+		String code_folder_name = scan.nextLine();
+
+		File app_dir = new File(master_folder_name + "/" + code_folder_name );
+
+		if(app_dir.exists())
 		{
-			src_dir.delete();
+			app_dir.delete();
 		}
 
 		try
 		{
-			src_dir.mkdir();
+			app_dir.mkdir();
 		}
 		catch(Exception e)
 		{
@@ -176,7 +191,7 @@ public class treqsbeta01
 
 		File code_file = new File(file_name);
 
-		File destination_code_file = new File(master_folder_name + "/src/" + file_name);
+		File destination_code_file = new File(master_folder_name + "/" + code_folder_name + "/" + file_name);
 
 		try
 		{	
@@ -204,7 +219,7 @@ public class treqsbeta01
 	    ////////////////////////////////////////////////////////////////////////////
 
 
-		File new_req_file = new File(master_folder_name + "/src/requirements.txt");
+		File new_req_file = new File(master_folder_name + "/" + code_folder_name + "/requirements.txt");
 
 		if(new_req_file.exists())
 		{
@@ -284,7 +299,7 @@ public class treqsbeta01
 		////////      Time to start writing into the Dockerfile     ////////////
 		///////////////////////////////////////////////////////////////////////
 
-		File new_dockerfile = new File(master_folder_name + "/Dockerfile");
+		File new_dockerfile = new File(master_folder_name + "/" + code_folder_name + "/Dockerfile");
 
 		if(new_dockerfile.exists())
 		{
@@ -314,6 +329,8 @@ public class treqsbeta01
 
 			docker_writer.write(System.lineSeparator() + run_key + " " + package_installer_info[1] + "/requirements.txt" + System.lineSeparator());
 
+			docker_writer.write(System.lineSeparator() + workdir_key + " " + code_folder_name);
+
 			docker_writer.write(System.lineSeparator() + expose_key + " 8080" + System.lineSeparator()); // By default, it's taken as the port 8080, it cant be changed manually later.
 
 			docker_writer.write(System.lineSeparator() + cmd_key + " [\"" + package_installer_info[2] + "\",\"" + package_installer_info[3] + "\"]");
@@ -324,6 +341,65 @@ public class treqsbeta01
 		{
 			e.printStackTrace();
 		}
+
+
+ 		////////////////////////////////////////////////////////////////////////////////////////
+ 		//////////////      Writing the docker-compose file       /////////////////////////////
+ 		//////////////////////////////////////////////////////////////////////////////////////
+
+ 		File docker_compose_file = new File(master_folder_name + "/" + code_folder_name + "/docker-compose.yml");
+
+ 		if(docker_compose_file.exists())
+ 		{
+ 			docker_compose_file.delete();
+ 		}
+
+ 		try
+ 		{
+ 			docker_compose_file.createNewFile();
+ 		}
+ 		catch(Exception e)
+ 		{
+ 			e.printStackTrace();
+ 		}
+
+ 		try
+ 		{
+ 			FileWriter docker_compose_fw = new FileWriter(docker_compose_file);
+
+ 			BufferedWriter docker_compose_buffw = new BufferedWriter(docker_compose_fw);
+
+ 			docker_compose_buffw.write("version: '3'" + System.lineSeparator());
+
+ 			docker_compose_buffw.write("services:" + System.lineSeparator());
+
+ 			docker_compose_buffw.write(" " + code_folder_name + ":" + System.lineSeparator());
+
+ 			docker_compose_buffw.write("  " + "images: " + docker_image_name + System.lineSeparator());
+
+ 			docker_compose_buffw.write("  " + "build: " + "." + System.lineSeparator());
+
+ 			docker_compose_buffw.write("   " + "context: " + "." + System.lineSeparator());
+
+ 			docker_compose_buffw.write("  " + "ports: " + System.lineSeparator());
+
+ 			docker_compose_buffw.write("   " + "8080:8080" + System.lineSeparator());
+
+ 			docker_compose_buffw.write("  " + "environment: " + System.lineSeparator());
+
+ 			docker_compose_buffw.write("   " + "-VIRTUAL_HOST=" + System.lineSeparator());
+
+ 			docker_compose_buffw.write("   " + "-VIRTUAL_PORT=8080" + System.lineSeparator());
+
+ 			docker_compose_buffw.write("  " + "volumes: " + System.lineSeparator());
+
+ 			docker_compose_buffw.close();
+
+ 		}
+ 		catch(Exception e)
+ 		{
+ 			e.printStackTrace();
+ 		}
 
  		scan.close();
 	}
@@ -425,7 +501,7 @@ public class treqsbeta01
 	/////////////         Setting it for different langauges          /////////////////////
 	//////////////////////////////////////////////////////////////////////////////////////
 
-	public static String[] package_recognizer(String file_extension)
+	public static String[] package_recognizer(String file_extension, String file_name)
 	{
 		String[] package_info_array = new String[4];
 
@@ -441,7 +517,7 @@ public class treqsbeta01
 
 			package_info_array[2] = "python";
 
-			package_info_array[3] = "server.py";
+			package_info_array[3] = file_name;
 		}
 		else if(file_extension.equals("go"))
 		{

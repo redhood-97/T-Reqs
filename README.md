@@ -26,8 +26,7 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
   
 **Step-1 :**   Move  to  the  JAR  file  to  a  preferred  location. <br>
 
-**Step-2 :**   Initialize  the  DOSKEY  batch  file  with  path  of  the  JAR  file  and  save  it  with  .bat     
-	  extension. <br>
+**Step-2 :**   Initialize  the  DOSKEY  batch  file  with  path  of  the  JAR  file  and  save  it  with  .bat  extension. <br>
 
 **Step-3 :**   Add  the  path  of  the  batch  file  to  the  target  of  the  CMD. <br>
 
@@ -41,7 +40,13 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
         <p>For using the JAR, just follow these simple instructions. After the application is launched, it will ask for some basic user entry. Fill those out. And VOILA !!! It's done. It's that easy. You Dockerfile is almost ready to go but it is recommended to make some changes, if needed before using it. <br> </p>
         <br>
         <br>
-        <b> Instructions in a nut-shell </b><br>
+        <b>
+	
+ ## Instructions in a nut-shell  <br>
+ 
+
+ 
+</b><br>
         
         
        

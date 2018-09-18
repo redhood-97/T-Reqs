@@ -34,7 +34,7 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
 
 **Step-5 :**    Navigate  to  the  directory  of  the  source  code  file. <br>
 
-**Step-6 :**    Type  ‘treqsrun’  and  follow  the  instructions. <br>
+**Step-6 :**    Type  ‘treqs’  and  follow  the  instructions. <br>
 
 </p> <br><br>
         <p>For using the JAR, just follow these simple instructions. After the application is launched, it will ask for some basic user entry. Fill those out. And VOILA !!! It's done. It's that easy. You Dockerfile is almost ready to go but it is recommended to make some changes, if needed before using it. <br> </p>
@@ -44,7 +44,7 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
 	
  ## Instructions in a nut-shell  <br>
  
-<p> <img src="images/demotreqs.PNG" align="center" width="800"></p><br>
+<p> <img src="images/treqsdemoimg1.PNG" align="center" width="800"></p><br>
  
 
  

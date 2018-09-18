@@ -47,7 +47,8 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
 <p> <img src="images/treqsdemoimg1.PNG" align="center" width="800"></p><br>
 <br>
 
-## What's new ?  <br>
+## What's new ?  
+
  Now, you can use projects involving multiple source code files of varying formats. The tool will successfully create a requirements.txt, a Dockerfile, a docker-compose.yaml file for each of the code files in separate app folders for smooth management. You just need to mention the files you want to work with properly, that's it !!!! 
 	<br><br>
  

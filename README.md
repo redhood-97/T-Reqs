@@ -9,7 +9,7 @@
 
 ## The Directory Structure
 
-<p><img src="images/newdir.PNG" width="600" align="left"> As shown in the image, a new project folder will be created which will contain the mentioned files<br>
+<p><img src="images/demoimg.PNG" width="650" align="left"> As shown in the image, a new project folder will be created which will contain the mentioned files<br>
 
 The user will be asked to enter a main project directory name. This will contain the Dockerfile and the src folder. The src folder will keep a copy of the original source code file and the automatically generated requirements file.<br>
 

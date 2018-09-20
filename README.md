@@ -37,7 +37,7 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
 **Step-6 :**    Type  ‘treqs’  and  follow  the  instructions. <br>
 
 </p> <br><br>
-        <p>For using the JAR, just follow these simple instructions. After the application is launched, it will ask for some basic user entry. Fill those up. And VOILA !!! It's done. It's that easy. You Dockerfile is almost ready to go but it is recommended to make some changes, if needed before using it. <br> </p>
+        <p>For using the JAR, just follow these simple instructions. After the application is launched, it will ask for some basic user entry. Fill those up. And VOILA !!! It's done. It's that easy. Your Dockerfile is almost ready to go but it is recommended to make some changes, if needed before using it. <br> </p>
         <br>
         <br>
 	

@@ -60,6 +60,7 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
 
  
 <br>
+<br>
         
   <p><b> NOTE: </b> This is just a beta version, which means, yes, it has some bugs that I'm still trying to figure out. At the moment, the application works for Python and Go projects but it'll be extended to other languages as well in the near future. Feel free to share your thoughts regarding any possible improvements so as to increase the overall scope of this project. All suggestions are more than welcome. Again, I would like to mention that the files generated should be previewed properly for any required changes. Sometimes, the version of the dependencies may not be updated, so, the user may need to make the changes. Any pending issues will be fixed.  </p>
         

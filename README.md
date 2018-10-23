@@ -64,7 +64,7 @@ Also, it's to be noted that it acts a miniature <i> version control </i> system 
 
 ## Updates coming soon 
 
-- The package management of Go pojects to be done with the help of the <b>GoDep</b> tool. The tool will prepare a project directory containing an initialiazed default Gopkg.toml file, docker-compose.yml, Dockerfile and so on.
+- The package management of Go projects to be done with the help of the <b>GoDep</b> tool. The tool will prepare a project directory containing an initialiazed default Gopkg.toml file, docker-compose.yml, Dockerfile and so on.
 - Ruby projects.
 
 

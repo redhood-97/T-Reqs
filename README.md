@@ -7,7 +7,7 @@
 <br>
 <p><b><font size="100px"> </font> </b></p><br>
 
-## The Directory Structure
+## The directory structure
 
 <p><img src="images/demoimg.PNG" width="650" align="left"> As shown in the image, a new project folder will be created which will contain the mentioned files<br>
 
